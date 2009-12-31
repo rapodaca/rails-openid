@@ -1,0 +1,5 @@
+<% if @user_session %>
+  <p>Logged in | <%= link_to 'logout', logout_url %></p>
+<% else %>
+  <p>Logged out | <%= link_to 'login', login_url %></p>
+<% end %>
